@@ -1,4 +1,4 @@
-//list is preorder of the tree
+//list is inorder of the tree
 #include <stdio.h>
 #include <stdlib.h>
 struct list_node
@@ -90,6 +90,13 @@ void insert()
 		}
 	}
 }
+
+void main()
+{
+	insert();
+}
+
+
 
 
 
