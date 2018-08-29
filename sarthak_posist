@@ -1,0 +1,46 @@
+#include<stdlib.h>
+#include<stdio.h>
+
+struct tnode
+{
+    int value;
+    struct tnode *left;
+    struct tnode *right;
+    struct tnode *parent;
+    struct tnode *list;
+    
+};
+
+
+struct lnode
+{
+    
+    struct lnode *next_node;
+    struct lnode *tree;
+    
+};
+
+
+
+struct lnode *list_start=NULL;
+struct tnode *tree_start=NULL;
+
+struct lnode *lcreate()
+{
+    struct lnode *n;
+    n=(struct lnode*)malloc(sizeof(struct lnode));
+    return n;
+}
+
+
+struct tnode *tcreate()
+{
+    struct tnode *n;
+    n=(struct tnode*)malloc(sizeof(struct tnode));
+    return n;
+}
+
+
+
+
+
